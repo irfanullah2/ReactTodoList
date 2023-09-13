@@ -1,13 +1,105 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Todo Component Styles */
+.main_div {
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.child_div {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.additems {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* .additems:hover{
+  background: rgb(52, 23, 218);
+} */
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.addbtn {
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 10px;
+  color: #00bcd4;
+}
+
+.showItems {
+  margin-top: 20px;
+  text-align: left;
+}
+.eachItem:hover{
+  background-color: aqua;
+}
+
+.eachItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.eachItem h3 {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.btn.effect04 {
+  font-size: 16px;
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.effect04 span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn.effect04:before {
+  position: absolute;
+  content: "";
+  background: #f2f2f2;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.btn.effect04:hover {
+  color: white;
+}
+
+.btn.effect04:hover:before {
+  transform: scaleX(1.2) scaleY(1.5);
 }
